@@ -1,9 +1,8 @@
 import 'dart:io';
-
 import 'Agregar/agregar.dart';
-
-void main() {
-  List<Map<String, dynamic>> productos = [];
+import 'Eliminar/eliminar.dart';
+void main(){
+  List<Map<String, dynamic>> productos =[];
   bool ejecuntando = true;
 
   while (ejecuntando) {
@@ -23,8 +22,10 @@ void main() {
       case '2':
         break;
       case '3':
-        break;
-      case '4':
+
+       break;
+      case'4' : 
+       eliminarProducto(productos);
         break;
       case '5':
         print('Saliendo del catalogo');
