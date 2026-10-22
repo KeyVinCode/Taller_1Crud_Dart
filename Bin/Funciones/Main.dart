@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'Agregar/agregar.dart';
 import 'Eliminar/eliminar.dart';
+import 'Actualizar/actualizar.dart';
 void main(){
   List<Map<String, dynamic>> productos =[];
   bool ejecuntando = true;
@@ -22,6 +23,7 @@ void main(){
       case '2':
         break;
       case '3':
+        actualizar(null, productos);
 
        break;
       case'4' : 
