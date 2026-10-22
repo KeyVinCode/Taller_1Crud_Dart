@@ -1,8 +1,8 @@
 import 'dart:io';
-import 'Agregar/agregar.dart';
-import 'Eliminar/eliminar.dart';
-import 'Listar/listar.dart';
-import 'Actualizar/actualizar.dart';
+import 'Funciones/Agregar/agregar.dart';
+import 'Funciones/Eliminar/eliminar.dart';
+import 'Funciones/Listar/listar.dart';
+import 'Funciones/Actualizar/actualizar.dart';
 void main(){
   List<Map<String, dynamic>> productos =[];
   bool ejecuntando = true;
@@ -25,7 +25,7 @@ void main(){
         ListarProducto(productos);
         break;
       case '3':
-        actualizar(null, productos);
+        ActualizarProducto(productos);
        break;
       case'4' : 
        eliminarProducto(productos);
