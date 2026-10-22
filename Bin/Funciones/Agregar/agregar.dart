@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void AgregarProducto(List<Map<String, dynamic>> productos) {
-  print('\n Agregar Nuevo Producto ');
+  print('\nAgregar Nuevo Producto ');
 
   // Nombre del Producto
   String nombre = '';
@@ -37,7 +37,7 @@ void AgregarProducto(List<Map<String, dynamic>> productos) {
     if (valor != null && valor >= 0) {
       cantidad = valor;
     } else {
-      print('Error: Ingrese un número entero válido (>= 0).');
+      print('Error: Ingrese un número entero válido mayor o igual a 0.');
     }
   }
 
