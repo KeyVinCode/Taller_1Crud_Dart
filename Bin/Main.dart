@@ -1,5 +1,6 @@
 
 import 'dart:io';
+import 'Funciones/Eliminar/eliminar.dart';
 void main(){
   List<> Catalogo =[];
   bool ejecuntando = true;
@@ -24,7 +25,8 @@ void main(){
       case '3':
 
        break;
-      case'4' : 
+      case '4':
+        eliminarProducto(Catalogo);
         break;
       case '5':
         print('Saliendo del catalogo');
